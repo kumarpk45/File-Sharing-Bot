@@ -29,7 +29,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_NAME = os.environ.get("DATABASE_NAME", "")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n𝐖ᴇʟᴄᴏᴍᴇ 𝐎ᴜʀ  ├𝐅ɪʟᴇ 𝐒ᴛᴏʀᴇ 𝐁ᴏᴛ┤+☞𝐌ᴀɴᴜᴀʟ 𝐅ɪᴛᴇʀ☜ 𝐅ᴏʀᴄᴇ_𝐬ᴜʙ_ᴄʜᴀɴɴᴇʟ [ Cᴏɴᴛᴀᴄᴛ Us :-@Askcaptainbot ] ")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n𝐖ᴇʟᴄᴏᴍᴇ 𝐎ᴜʀ  ├𝐅ɪʟᴇ 𝐒ᴛᴏʀᴇ 𝐁ᴏᴛ┤+☞𝐌ᴀɴᴜᴀʟ 𝐅ɪᴛᴇʀ☜ 𝐅ᴏʀᴄᴇ_𝐬ᴜʙ_ᴄʜᴀɴɴᴇʟ [ Cᴏɴᴛᴀᴄᴛ Us :-@PKlinkzz_admin_bot ] ")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
